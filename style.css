@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.box {
+    width: 75%;
+    height: 85% ;
+    max-width: 800px;
+    max-height:800px;
+    margin: 100px auto;
+    background: #f1e8e8;
+    border: solid 15px #5b5959;
+    border-radius: 10px;
+
+    display: grid;
+    height :550px;
+    width: 100%;
+    gap: 5px;
+    
+
+    grid-template-columns: 10% 20% 5% 25% 5% 20% 10%;
+    grid-template-rows: 15% 13% 26% 42% ;
+   
+}
+
+
+.new_game{
+    grid-column: 4/5;
+    grid-row: 1/2;
+}
+.name-0{
+    grid-column: 2/3;
+    grid-row: 2/3;
+   
+}
+.player1{
+    grid-column: 3/4;
+    grid-row: 2/3;
+    
+}
+.name-1 {
+    grid-column: 6/7;
+    grid-row: 2/3;
+}
+.player2{
+    grid-column: 7/8;
+    grid-row: 2/3;
+}
+.display1 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+.divDice {
+    grid-column: 4/5;
+    grid-row: 3/4;
+      
+}
+.display2 {
+    grid-column: 6/7;
+    grid-row: 3/4;
+}
+.current1{
+    grid-column: 2/3;
+    grid-row: 4/5;
+}
+.twoButtons{
+    grid-column: 4/5;
+    grid-row: 4/5;
+}
+.current2 {
+    grid-column: 6/7;
+    grid-row: 4/5;
+}
+
+h1{
+    text-align: center;
+    border: solid 1px #eee;
+   }
+  
+  h3 {
+    color: #394249;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .display1,.display2 {
+    color: #ff3100;
+    width: 100px;
+  }
+  
+  .current1, .current2 {
+    color: #ff3100;
+    width: 100px;
+    height: 90PX;
+  }
+  
+  .winner{
+    border: solid 1px green;
+    padding: 5px;
+    background-color: rgb(174, 251, 174);
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    color: black !important;
+  }
+  .dice{
+    padding: 14px;
+  }
+
+  .twoButtons{
+    margin-left: -12px;
+  }
+  
+
+  .display1,
+  .display2 {
+    border: solid 1px rgb(255, 48, 0);
+    height: 5rem;
+    border-radius: 5px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  
+   .currentAndButton {
+    margin-top: 90px;
+    margin-bottom: 50px;
+   }
+  
+   #score-0, #score-1, #current-0, #current-1 {
+    font-size: 3rem;
+  }
+  
+  .current1,
+  .current2 {
+    border: solid 1px rgb(255, 48, 0);
+    background-color: rgb(255, 48, 0);
+    border-radius: 5px;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    border: 1px solid rgb(141, 41, 41) !important;
+  }
+  
+  .btn-roll, #btn-hold {
+    width:10rem;
+    height: 3rem;
+}
+
+.disable{
+    pointer-events: none;
+    opacity: 0.5;
+  }
+  
+  
+  .arrow_hold button {
+    margin-top: 20px;
+  }
+  
+  .arrow_hold img {
+    height: 40px;
+    margin-top: -8px;
+  }
+
+  @media (max-width: 735px){
+   .img-newGame{
+      display: none;
+    } 
+   }
+
+  @media (max-width: 620px) {
+      #name-0, #name-1{
+      font-size: 1.2rem;
+      }
+   }
+
+   @media (max-width: 576px) {
+    .display1, .display2,.current1,.current2, .btn-roll, .imgDice {
+      width: 95%;
+    }
+  
+    .btn-new{
+      width: 150x;
+      height: 40px !important;
+      font-size: 0.8rem;
+      margin-top: 0px !important;
+      padding-top: -15px !important;
+    }
+    .btn-new ::before{
+      content:"New" !important;
+      display: block;
+    }
+    .img-newGame,.img-btn-roll,.img-btn-hold{
+      display: none;
+    }
+
+    .twoButtons{
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      align-content: center;
+      align-self: center;
+    }
+
+    #btn-rollDice, #btn-hold{
+      font-size: 0.8rem;
+      width: 110px;
+      height: 1.9rem;
+      padding-left: 1rem;
+    }
+
+    .name-0, .name-1{
+      font-size: 0.8rem;
+    }
+    #btn-rollDice, #btn-hold{
+      padding-top: 5px;
+    }
+}
+
+@media (max-width: 469px) {
+  .btn-new{
+    padding: top -25px !important ;
+    height: 20px;
+  }
+  #name-0, #name-1{
+    font-size: 1rem;
+  }
+
+  .btn-new{
+    width: 150x;
+    height: 50px !important;
+    font-size: 0.8rem;
+    padding-top: 5px;
+  }
+
+  #btn-rollDice, #btn-hold{
+    width: 92px;
+    padding-top: 5px;
+  }
+}

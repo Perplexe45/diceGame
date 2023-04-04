@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+ </head>
+<body>
+
+    <div >
+        <h1 class="  mt-5">Jeu de dé avec 2 joueurs</h1>
+      </div>
+
+    <div class="box container">
+        <!-- Le bouton new_game -->
+        <div class="new_game text-center my-auto ">
+            <button class="btn-new btn-outline-light"><img class="img-newGame me-2" src="./images/addGame.png" alt="AjoutDePartie">New game</button>      
+        </div>
+
+
+        <!-- les players + les 2 points-led -->
+        <div class="name-0 my-auto mx-auto">
+            <h3 id="name-0">Player 1</h3>
+        </div>
+        <div class="player1 my-3">
+            <img class="playerPointer-0" src="./images/pointer1.png" alt="pointer1Rouge">
+       </div>
+        <div class="name-1 my-auto mx-auto">
+            <h3 id="name-1">Player 2</h3>
+        </div>
+        <div class="player2 my-3">
+             <img class="playerPointer-1" src="./images/pointer2.png" alt="pointer1Rouge">
+        </div>
+
+        <!-- les score globaux + le dé -->
+        <div class="display1 my-auto">
+            <h4 id="score-0" class="my-2">...</h4>
+        </div>
+        <div class="divDice my-auto mx-auto">
+            <img class="imgDice" src="./images/rollTheDice.png" alt="imagedudé">
+        </div>
+        <div class="display2 my-auto">
+            <h4 id="score-1" class="my-2">...</h4>
+        </div>
+
+        <!-- Score courant et les 2 boutons -->
+        <div class="player-0 current1 my-auto mx-auto">
+            <h5>Current</h5>
+            <h2 id="current-0">...</h2>
+        </div>
+        <!-- Les 2 boutons -->
+        <div class="twoButtons my-auto">
+            <div class="rollDice mx-auto">
+                <button id="btn-rollDice" class="ps-2 ms-4 disable btn-roll btn-outline-light"><img class="img-btn-roll my-auto" src="./images/rotateArrow.png" alt="Lancement de dé"> ROLL DICE</button>  
+            </div>
+             
+            <div class="hold mt-2 ms-4">
+                <button id="btn-hold" class="disable btn-hold btn-outline-light pb-1pt-0 ms-0"><img class="img-btn-hold pe-2 my-auto" src="./images/arrowDown.png" alt="Dumper son score">HOLD</button>
+            </div>  
+        </div>
+        <div class="player-1 current2 my-auto mx-auto">
+            <h5>Current</h5>
+            <h2 id="current-1">...</h2>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
